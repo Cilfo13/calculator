@@ -4,21 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <h1 >1</h1>
-    <button class="buttonNumber">0</button>
-    <button class="buttonNumber">1</button>
-    <button class="buttonNumber">2</button>
-    <button class="buttonNumber">3</button>
-    <button class="buttonNumber">4</button>
-    <button class="buttonNumber">5</button>
-    <button class="buttonNumber">6</button>
-    <button class="buttonNumber">7</button>
-    <button class="buttonNumber">8</button>
-    <button class="buttonNumber">9</button>
+<body class="body">
+    <header>
+        <h1 class="calculadoraTitle">Calculadora</h1>
+    </header>
+    <div class="div1">
+        <div>
+            <h1 
+            id="casillaNumero"
+            class="casillaNumero"
+            > 0 </h1>
+        </div>
+        <div>
 
-
+            <div>
+                <button 
+                    id="button0" 
+                    class="buttonNumber"
+                    onclick="escribirNumero(0)"
+                >0</button>
+            
+                <button 
+                    id="1" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('1')"
+                >1</button>
+            
+                <button 
+                    id="2" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('2')"
+                >2</button>
+            </div>
+        
+            <div>
+                <button 
+                    id="3" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('3')"
+                >3</button>
+            
+                <button 
+                    id="4" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('4')"
+                >4</button>
+            
+                <button 
+                    id="5" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('5')"
+                >5</button>
+        
+            </div>
+        
+            <div>
+                <button 
+                    id="6" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('6')"    
+                    >6</button>
+                <button 
+                    id="7" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('7')"
+                >7</button>
+            
+                <button 
+                    id="8" 
+                    class="buttonNumber"
+                    onclick="escribirNumero('8')"
+                >8</button>
+            
+            </div>
+            <div>
+                <button 
+                id="9" 
+                class="buttonNumber"
+                onclick="escribirNumero('9')"
+            >9</button>
+        
+            <button 
+                id="+" 
+                class="buttonNumber"
+                onclick="operacion('suma')"
+            >+</button>
+        
+            <button 
+                id="-" 
+                class="buttonNumber"
+                onclick="operacion('resta')"
+            >-</button>
+        
+        </div>
+        
+        <div>
+            <button
+                id="clear"
+                class="buttonNumber"
+                onclick="limpiar()"
+            >C
+            </button>
+            <button 
+                id="=" 
+                class="buttonNumber"
+                onclick="operacion('multiplicacion')"
+            >x</button>
+            <button 
+                id="=" 
+                class="buttonNumber"
+                onclick="operacion('division')"
+            >/</button>
+        </div>
+        <div class="div6">
+            <button
+                id="ans"
+                class="buttonNumber"
+                onclick="usarAns()"
+            >ans
+            </button>
+            <button 
+                id="=" 
+                class="buttonNumber"
+                onclick="resultado(primerValor, segundoValor)"
+            >=</button>
+        </div>
+    </div>
+</div>
     <script src="./src/index.js"></script>
 </body>
 </html>
