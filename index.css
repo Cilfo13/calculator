@@ -1,27 +1,74 @@
-.main{
-    background-color: #1d3557
-}
-.body{
-    background-color: #1d3557
-}
-.calculadoraTitle{
-    position: relative;
-    text-align: center;
-    padding: 5px;
-    color: white;
-}
-.div1 {
-    position: relative;
-    left: 50px;
-    width: calc(100% - 100px);
-    border: 1px solid white;
-    background-color:#1d3557;
-    padding: 5px;
-    text-align: center;
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
 }
 
-
-.casillaNumero {
+header h1{
+    margin-top:10px;
+}
+body{
+    background-color: #457B9D;
+}
+main{
+    background-color: #1D3557;
     color: white;
+    width: 100%;
+    height: 600px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerCasilla{
+    background-color: #F1FAEE;
+    color: #1D3557;
+    width: 300px;
+    height: 60px;
+    margin: 10px;
+}
+.containerCasilla h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.containerTeclas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+.containerTeclas button{
+    font-size: 40px;
+}
+.buttonNumber,.operation{
+    height: 85px;
+}
+#button0,#button1,#button2,#button3{
+    width: 25%;
+}
+#button4,#button5,#button6,#button7{
+    width: 25%;
+}
+#button8,#button9,#plusButton,#minumButton{
+    width: 25%;
+}
+#ANSButton{
+    font-size: 30px;
+}
+#CButton, #multiplicationButton, #divisionButton, #ANSButton {
+    width: 25%;
+}
+#equalButton{
+    width: 100%;
+}
+@media (min-width: 400px){
+    main{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px white solid;
+    }
 }
 
