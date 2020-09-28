@@ -5,7 +5,8 @@
 }
 
 header h1{
-    margin-top:10px;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-color: #457B9D;
@@ -23,7 +24,7 @@ main{
     background-color: #F1FAEE;
     color: #1D3557;
     width: 300px;
-    height: 60px;
+    height: 70px;
     margin: 10px;
 }
 .containerCasilla h1{
